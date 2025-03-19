@@ -464,4 +464,13 @@ input ,textarea{
     .title-top h5{
         font-size: 12px !important;
     }
+
+    .popuimg {
+        width: 95%;
+        height: 120px !important;
+        margin: 10px !important;
+    }
+    .popup-btn{
+        font-size: 8px !important;
+    }
   }

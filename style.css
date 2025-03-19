@@ -461,4 +461,7 @@ input ,textarea{
     .btn1{
         font-size: 10px !important;
     }
+    .title-top h5{
+        font-size: 12px !important;
+    }
   }

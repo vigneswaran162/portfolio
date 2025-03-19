@@ -387,7 +387,7 @@ input ,textarea{
 
       .box-contain-1{
         width: 90%;
-        min-height: 40vh;
+        min-height: 35vh;
         border-radius: 15px;
         padding: 40px;
         z-index: 10;

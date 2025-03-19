@@ -402,4 +402,16 @@ input ,textarea{
     .portfolio-title{
        font-size: 12px !important;
     }
+    .contact-box{
+        padding: 20px !important;
+    }
+    .contact-box h6{
+        font-size: 12px !important;
+    }
+    .contact-box a{
+        font-size: 8px !important;
+    }
+    .contact-box i{
+        font-size: 10px !important;
+    }
   }

@@ -44,11 +44,11 @@
                     <div class="col-md-6 p-md-5 p-xs-2 ">
                         <h3 class="mb-3">CONTACT US</h3>
                         <div class="input-box p-2">
-                            <input type="text" class="mb-3" placeholder="Name">
-                            <input type="text" class="mb-3" placeholder="Email">
-                            <input type="text" class="mb-3" placeholder="Subject">
-                            <textarea name="" id="" rows="5" class="mb-3" placeholder="Message"></textarea>
-                            <button class="btn1">SEND MESSAGE</button>
+                            <input type="text" class="mb-3" id="name" placeholder="Name" required>
+                            <input type="text" class="mb-3" id="email" placeholder="Email" required>
+                            <input type="text" class="mb-3" id="subject" placeholder="Subject" required>
+                            <textarea name="" id="" rows="5" class="mb-3" id="message" placeholder="Message" required></textarea>
+                            <button class="btn1" onclick="sendEmail()">SEND MESSAGE</button>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-center justify-content-start">
@@ -92,6 +92,39 @@
             const menu = document.getElementById("menu");
             menu.classList.toggle("active");
         }
+        function sendEmail() {
+            function sendEmail() {
+    // Get form values
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Form validation
+    if (!name || !email || !subject || !message) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    // Email format validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // Prepare the mailto link
+    const mailtoLink = `mailto:your_email@gmail.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+    
+    // Trigger the email
+    window.location.href = mailtoLink;
+
+    // Show success alert
+    alert('Message sent successfully!');
+}
+}
+
+        
     </script>
 
 

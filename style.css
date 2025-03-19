@@ -305,3 +305,45 @@ input ,textarea{
     color: #D9D9D9 !important;
     text-decoration: none !important;
   }
+
+
+  @media only screen and (max-width: 450px) {
+    .box-contain{
+        width: 90%;
+        min-height: 40vh !important;
+        background-color: #D9D9D9;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+    }
+    
+    .profile{
+        width: 30px !important;
+        height: 30px !important;
+        border-radius: 50% !important;
+        object-fit: cover;
+      }
+     
+      .profile img{
+        width: 100% !important;
+        height: 100% !important;
+      }
+     
+    
+      .nav-title{
+        font-size: 12px !important;
+        font-weight: 600;
+        color: #D9D9D9 !important;
+        letter-spacing: 1px !important;
+      }
+      h1{
+        font-size: 20px !important;
+      }
+      h6{
+        font-size: 14px !important;
+      }
+
+  }

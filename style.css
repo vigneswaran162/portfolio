@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: "Montserrat", sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-color:#323232 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.box-contain{
+    width: 70%;
+    min-height: 80vh;
+    background-color: #D9D9D9;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+
+.box-contain-1{
+    width: 70%;
+    min-height: 80vh;
+    /* background-color: #D9D9D9;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); */
+    border-radius: 15px;
+    padding: 40px;
+    /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); */
+    z-index: 10;
+}
+
+
+
+/* 3D Bubble Effect */
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    /* background: radial-gradient(circle, #8b8b8b, #999);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); */
+    background: rgb(50,50,50);
+    background: linear-gradient(173deg, rgba(50,50,50,1) 0%, rgba(153,136,136,1) 100%);
+    animation: float 5s infinite alternate ease-in-out;
+  }
+  
+  .bubble1 {
+    width: 150px;
+    height: 150px;
+    top: 10%;
+    left: 5%;
+  }
+  
+  .bubble2 {
+    width: 100px;
+    height: 100px;
+    top: 8%;
+    right: 10%;
+  }
+  
+  .bubble3 {
+    width: 120px;
+    height: 120px;
+    bottom: 10%;
+    left: 15%;
+  }
+  
+  .bubble4 {
+    width: 80px;
+    height: 80px;
+    bottom: 0%;
+    right: 10%;
+  }
+  
+  .bubble5 {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .bubble6 {
+    width: 80px;
+    height: 80px;
+    top: 5%;
+    left: 50%;
+  
+  }
+
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      transform: translateY(-30px) scale(1.1);
+    }
+  }
+
+
+  .profile{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    object-fit: cover;
+  }
+ 
+  .profile img{
+    width: 100% !important;
+    height: 100% !important;
+  }
+ 
+
+  .nav-title{
+    font-size: 20px !important;
+    font-weight: 600;
+    color: #D9D9D9 !important;
+    letter-spacing: 1px !important;
+  }
+
+  .fa-list-ul{
+    font-size: 25px !important;
+    color: #D9D9D9 !important;
+    cursor: pointer !important;
+  }
+
+
+  /* Typewriter Effect */
+.typewriter {
+    font-size: 16px;
+    color: #D9D9D9 !important;
+    font-weight: 500;
+    letter-spacing: 1px !important;
+  }
+  h1{
+    color: #D9D9D9 !important;
+  }
+  
+.contain{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1{
+    font-size: 12px !important;
+    background: #666;
+    color: #fff;
+    border: none;
+    padding: 8px 25px !important;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    letter-spacing: 1px !important;
+}
+
+h6{
+    font-size: 18px !important;
+    color: #D9D9D9;
+    letter-spacing: 1px !important;
+}
+h1{
+    
+        font-size: 35px !important;
+        color: #D9D9D9;
+        letter-spacing: 1px !important;
+    
+}
+
+.about-img {
+    width: 300px !important;
+    height: 320px !important;
+    border-radius: 10px !important;  /* Applies to container */
+    overflow: hidden;                /* Ensures img respects the border-radius */
+    display: block;
+  }
+  
+  .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;             /* Ensures full image visibility */
+    object-position: center;
+    border-radius: 50px !important;  /* Applies rounded corners directly to the image */
+  }
+.about-page{
+    overflow:  hidden !important;
+}
+
+h3{
+    color: #D9D9D9 !important;
+    letter-spacing: 1px !important;
+}
+p{
+    color: #D9D9D9 !important;
+    text-align: justify !important;
+    font-size: 14px !important;
+}
+input ,textarea{
+    background-color: rgba(255, 255, 255, 0.1);  
+    color: #fff;
+    width: 75%;
+    padding: 10px !important;
+    border: none !important;
+    border-radius: 10px !important;
+    outline: none !important;
+}
+
+.cont-title{
+    font-size: 16px !important;
+}
+
+
+
+
+
+
+  /* Full-screen Menu Overlay */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2E2E;         /* Darker grey base color */
+    background: rgba(46, 46, 46, 0.8);  /* Grey with slight transparency */
+    backdrop-filter: blur(25px);        /* Stronger blur effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    z-index: 998;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border-radius: 10px !important;
+  }
+  
+  /* Show Menu */
+  .menu-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 34px;
+    color: #D9D9D9 !important;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close-btn:hover {
+    color:#D9D9D9;
+    /* text-decoration: underline; */
+  }
+  
+  /* Menu Content */
+  .menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .menu-content a {
+    display: block;
+    font-size: 40px;
+    color:#D9D9D9;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: 0.3s;
+  }
+  
+  .menu-content a:hover {
+    color:#D9D9D9;
+    text-decoration: underline;  }
+  
+
+  ::placeholder{
+    color: #D9D9D9 !important;
+    font-weight: lighter !important;
+  }
+
+  .fa-brands , .fa-phone , .fa-envelope{
+    font-size: 20px !important;
+    margin: 5px !important;
+    color: #D9D9D9 !important;
+  }
+
+  p a{
+    color: #D9D9D9 !important;
+    text-decoration: none !important;
+  }

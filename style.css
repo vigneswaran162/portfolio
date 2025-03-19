@@ -414,4 +414,15 @@ input ,textarea{
     .contact-box i{
         font-size: 10px !important;
     }
+
+    input ,textarea{
+        background-color: rgba(255, 255, 255, 0.1);  
+        color: #fff;
+        width: 75%;
+        padding: 8px !important;
+        border: none !important;
+        border-radius: 10px !important;
+        outline: none !important;
+        font-size: 8px !important;
+    }
   }
